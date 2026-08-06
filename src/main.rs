@@ -3,10 +3,12 @@ mod borrow_operation;
 mod module_one;
 mod module_three;
 mod module_two;
+mod task_one;
 fn main() {
     module_one::module_one_func();
     module_two::module_two_func();
     module_three::ownership_rules();
     avoiding_ownership::avoid_owner();
     borrow_operation::borrow();
+    task_one::find_vowels();
 }
