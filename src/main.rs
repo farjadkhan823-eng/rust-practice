@@ -5,6 +5,7 @@ mod module_three;
 mod module_two;
 mod task_one;
 mod task_two;
+mod task_three;
 fn main() {
     module_one::module_one_func();
     module_two::module_two_func();
@@ -13,4 +14,5 @@ fn main() {
     borrow_operation::borrow();
     task_one::find_vowels();
     task_two::find_first_letter();
+    task_three::empty_check();
 }
