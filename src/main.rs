@@ -7,6 +7,7 @@ mod task_one;
 mod task_two;
 mod task_three;
 mod task_four;
+mod re_data_types;
 fn main() {
     module_one::module_one_func();
     module_two::module_two_func();
@@ -17,4 +18,5 @@ fn main() {
     task_two::find_first_letter();
     task_three::empty_check();
     task_four::borrowing();
+    re_data_types::data_types();
 }
