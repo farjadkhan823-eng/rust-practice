@@ -105,16 +105,37 @@ pub fn data_types() {
     //     _ => println!("Access Denied"),
     // };
 
-    // LOOP //
-    let mut i = 1;
+    // LOOP WITH BREAK//
+    // let mut i = 1;
 
-    loop {
-        println!("{}", i);
+    // loop {
+    //     println!("{}", i);
 
-        i += 1;
+    //     i += 1;
 
-        if i > 5 {
-            break;
-        }
+    //     if i > 5 {
+    //         break;
+    //     }
+    // }
+
+    // WHILE LOOP //
+
+    // let mut k =1;
+
+    // while k<=5 {
+    //     println!("{}",k);
+
+    //     k+=1;
+    // }
+
+    // FOR LOOP //
+    // 6 is not include in loop // ..6 mean is < 6
+    // for num in 1..6 {
+    //     println!("{}", num);
+    // }
+
+    // if want include last number also so use ..=6 means is <=6
+    for num in 1..=6 {
+        println!("{}", num);
     }
 }
