@@ -74,34 +74,47 @@ pub fn data_types() {
     // println!("{:#?}", student_list);
 
     // IF-ELSE //
-    let age: i32 = 17;
+    // let age: i32 = 17;
 
-    if age >= 18 {
-        println!("This person is valid for CNIC");
-    } else {
-        println!("This person is not valid for CNIC");
+    // if age >= 18 {
+    //     println!("This person is valid for CNIC");
+    // } else {
+    //     println!("This person is not valid for CNIC");
+    // }
+
+    // // MATCH //
+
+    // let day: i8 = 5;
+
+    // match day {
+    //     1 => println!("Monday"),
+    //     2 => println!("Tuesday"),
+    //     3 => println!("Wednesday"),
+    //     4 => println!("Thursday"),
+    //     5 => println!("Friday"),
+    //     6 => println!("Saturday"),
+    //     7 => println!("Sunday"),
+    //     _ => println!("Invalid"),
+    // };
+
+    // let role: &str = "amdin";
+
+    // match role {
+    //     "admin" => println!("Dashboard"),
+    //     "user" => println!("Profile"),
+    //     _ => println!("Access Denied"),
+    // };
+
+    // LOOP //
+    let mut i = 1;
+
+    loop {
+        println!("{}", i);
+
+        i += 1;
+
+        if i > 5 {
+            break;
+        }
     }
-
-    // MATCH //
-
-    let day: i8 = 5;
-
-    match day {
-        1 => println!("Monday"),
-        2 => println!("Tuesday"),
-        3 => println!("Wednesday"),
-        4 => println!("Thursday"),
-        5 => println!("Friday"),
-        6 => println!("Saturday"),
-        7 => println!("Sunday"),
-        _ => println!("Invalid"),
-    };
-
-    let role: &str = "amdin";
-
-    match role {
-        "admin" => println!("Dashboard"),
-        "user" => println!("Profile"),
-        _ => println!("Access Denied"),
-    };
 }
