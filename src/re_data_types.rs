@@ -1,10 +1,10 @@
-#[derive(Debug)]
-struct StudentData {
-    name: String,
-    program: String,
-    semester: u32,
-    result: f32,
-}
+// #[derive(Debug)]
+// struct StudentData {
+//     name: String,
+//     program: String,
+//     semester: u32,
+//     result: f32,
+// }
 
 pub fn data_types() {
     // // ARRAY //
@@ -39,7 +39,6 @@ pub fn data_types() {
     // println!("salary {}", salary);
 
     // STRUCT //
-
     // let std_one = StudentData {
     //     name: String::from("Samad"),
     //     class: String::from("6th"),
@@ -48,28 +47,61 @@ pub fn data_types() {
 
     // println!("{:#?}", std_one);
 
-    let mut student_list: Vec<StudentData> = Vec::new();
+    // STRUCT WITH VECTOR//
+    // let mut student_list: Vec<StudentData> = Vec::new();
 
-    student_list.push(StudentData {
-        name: String::from("Samad"),
-        program: String::from("BS-Software Engineering"),
-        semester: 5,
-        result: 2.90,
-    });
+    // student_list.push(StudentData {
+    //     name: String::from("Samad"),
+    //     program: String::from("BS-Software Engineering"),
+    //     semester: 5,
+    //     result: 2.90,
+    // });
 
-    student_list.push(StudentData {
-        name: String::from("Farjad"),
-        program: String::from("BS-Software Engineering"),
-        semester: 3,
-        result: 3.80,
-    });
+    // student_list.push(StudentData {
+    //     name: String::from("Farjad"),
+    //     program: String::from("BS-Software Engineering"),
+    //     semester: 3,
+    //     result: 3.80,
+    // });
 
-    student_list.push(StudentData {
-        name: String::from("Arman"),
-        program: String::from("BS-Computer Science"),
-        semester: 4,
-        result: 3.65,
-    });
+    // student_list.push(StudentData {
+    //     name: String::from("Arman"),
+    //     program: String::from("BS-Computer Science"),
+    //     semester: 4,
+    //     result: 3.65,
+    // });
 
-    println!("{:#?}", student_list);
+    // println!("{:#?}", student_list);
+
+    // IF-ELSE //
+    let age: i32 = 17;
+
+    if age >= 18 {
+        println!("This person is valid for CNIC");
+    } else {
+        println!("This person is not valid for CNIC");
+    }
+
+    // MATCH //
+
+    let day: i8 = 5;
+
+    match day {
+        1 => println!("Monday"),
+        2 => println!("Tuesday"),
+        3 => println!("Wednesday"),
+        4 => println!("Thursday"),
+        5 => println!("Friday"),
+        6 => println!("Saturday"),
+        7 => println!("Sunday"),
+        _ => println!("Invalid"),
+    };
+
+    let role: &str = "amdin";
+
+    match role {
+        "admin" => println!("Dashboard"),
+        "user" => println!("Profile"),
+        _ => println!("Access Denied"),
+    };
 }
