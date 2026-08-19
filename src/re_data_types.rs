@@ -135,7 +135,7 @@ pub fn data_types() {
     // }
 
     // if want include last number also so use ..=6 means is <=6
-    for num in 1..=6 {
-        println!("{}", num);
-    }
+    // for num in 1..=6 {
+    //     println!("{}", num);
+    // }
 }
